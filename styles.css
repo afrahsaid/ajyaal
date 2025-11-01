@@ -55,6 +55,9 @@ body {
 body {
   font-family: "Roboto", sans-serif;
 }
+.color-black{
+  color: #030712;
+}
 /* -----Pages Styling */
 .pages-heading {
   padding: 120px 0px 0px 50px;
@@ -220,7 +223,7 @@ padding-right: 40px;
   display: flex;
    align-items: center;
    justify-content: space-around; 
-   /* background-color: var(--secondary-color); */
+   background-color: var(--secondary-color);
 }
 .hero-content h2{
   color: var(--primary-color-blue);
@@ -254,6 +257,7 @@ padding-right: 40px;
   min-height: 100vh;
   display: flex;
   align-items: center;
+  
 }
 .section__container{
   width: 100%;
@@ -315,7 +319,7 @@ padding-right: 40px;
   width: 60px;
   margin: auto;
   border-radius: 50%;
-  border: 1px solid var(--primary-color);
+  /* border: 1px solid var(--primary-color); */
 }
 .card .name{
   font-size: .9rem;
@@ -354,8 +358,8 @@ padding-right: 40px;
   /* background-color: var(--primary-color-orange); */
   padding: 20px ;
   /* background: #F49D3F; */
-background: linear-gradient(90deg, rgba(244, 157, 63, 1) 0%, rgba(42, 123, 155, 1) 50%, rgba(244, 157, 63, 1) 100%);
-
+/* background: linear-gradient(90deg, rgba(244, 157, 63, 1) 0%, rgba(42, 123, 155, 1) 50%, rgba(244, 157, 63, 1) 100%); */
+background: var(--secondary-color);
 }
 .heading-services{
 	margin-top:0px ;
@@ -410,8 +414,8 @@ border-radius: 3px;
 /* box-shadow: 20px 20px 50px 15px grey; */
 }
 #about-country div{
-  padding-left: 40px;
-padding-right: 40px;
+  padding-left: 20px;
+padding-right: 20px;
 }
 .about-country h2{
   font-size: 40px;
@@ -426,7 +430,7 @@ padding-right: 40px;
 
 }
 .about-country p span{
-  color: var(--primary-color-blue);
+  /* color: var(--primary-color-blue); */
   font-weight: 500;
   justify-content: baseline;
 
@@ -592,8 +596,8 @@ form .btn2{
     padding-right: 20px;
   }
   #about-country div {
-    padding-left: 40px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
 }
 
 
@@ -652,8 +656,12 @@ form .btn2{
 
     .hero-content {
       margin: 80px 0px 5px 20px;
-      padding: 30px;
+      /* margin: 80px 0px 5px 10px; */
+      /* padding: 30px; */
   }
+  a.active, a:hover{
+    color:var(--primary-color-blue) ;
+}  
 
 }
 
@@ -696,6 +704,9 @@ form .btn2{
       left: 0;
       display: block;
     }
+    a.active, a:hover{
+      color:var(--primary-color-blue) ;
+  }  
     /* ---------------------------- */
     /* HERO SECTION */
   #hero{
@@ -707,15 +718,17 @@ form .btn2{
   }
   .hero-content{
     margin: 80px 0px 5px 40px ;
-    padding: 30px;
+    /* The below padding was removed as it ws making a space to the right side in mobile view */
+    /* padding: 30px; */
+
   }
   .hero-content h2{
     color: var(--primary-color-blue);
     margin-bottom: 5px;
   }
   .hero-content h1{
-    /* font-size: 44px; */
-    font-size: 34px;
+    font-size: 44px;
+    /* font-size: 34px; */
     width: 400px;
   }
   .hero-content p{
@@ -748,7 +761,8 @@ form .btn2{
   #about-head div{
     padding-left: 20px;
     padding-right: 20px;
-    width: 80%;
+    width: 100%;
+    padding-bottom: 20px;
 
   }
   .section-p1{
@@ -805,8 +819,9 @@ form .btn2{
   .about-english :nth-child(1) { order: 2; }
 
   #about-country div{
-    padding-left: 40px;
-  padding-right: 40px;
+    padding-left: 10px;
+  padding-right: 10px;
+
   }
   .about-country h2{
     margin-top: 30px;
